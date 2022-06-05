@@ -15,6 +15,6 @@ app.get("/", (req: Request, res: Response) => {
   })
 });
 
-app.use(categoriesRoutes);
+app.use("/categories", categoriesRoutes);
 
 
