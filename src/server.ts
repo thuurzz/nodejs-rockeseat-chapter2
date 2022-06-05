@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import { categoriesRoutes } from "./routes/catogories.routes";
 
 const app = express();
 
@@ -14,9 +15,6 @@ app.get("/", (req: Request, res: Response) => {
   })
 });
 
-app.post("/courses", (req: Request, res: Response) => {
-  const { name } = req.body;
-  return res.json({
-    name
-  })
-});
+app.use(categoriesRoutes);
+
+
