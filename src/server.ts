@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
-import { categoriesRoutes } from "./routes/catogories.routes";
+import { categoriesRoutes } from "./routes/Catogories.routes";
+import { specificationRoutes } from "./routes/Specifications.routes";
 
 const app = express();
 
@@ -16,5 +17,6 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/categories", categoriesRoutes);
+app.use("/specifications", specificationRoutes);
 
 
