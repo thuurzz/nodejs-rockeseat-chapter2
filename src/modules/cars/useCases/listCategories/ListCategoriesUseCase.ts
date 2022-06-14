@@ -1,5 +1,5 @@
 import { Category } from "../../model/Category";
-import { ICategoryRepository } from "../../repository/ICategoriesRepository";
+import { ICategoryRepository } from "../../repositories/ICategoriesRepository";
 
 class ListCategoriesUseCase {
 
