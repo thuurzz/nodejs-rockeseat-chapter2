@@ -6,11 +6,11 @@ class SpecificationRepository implements ISpecificationRepository {
 
   private static INSTANCE: SpecificationRepository;
 
-  constructor() {
+  private constructor() {
     this.specifications = [];
   }
 
-  public static getInstace(): SpecificationRepository {
+  public static getInstance(): SpecificationRepository {
     if (!SpecificationRepository.INSTANCE) {
       SpecificationRepository.INSTANCE = new SpecificationRepository();
     }
