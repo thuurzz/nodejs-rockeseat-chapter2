@@ -6,7 +6,9 @@ class ImportCategoryController {
 
   handle(request: Request, response: Response): Response {
     const { file } = request;
+
     this.importCategoryUsecase.execute(file);
+    
     return response.send();
   }
 }
